@@ -38,3 +38,12 @@ print("socket binded to port = ",port)
 
 s1.listen(5)
 print("Scoket is listenining")
+
+while True:
+    c, addr = s1.accept()
+    print("Established connection", addr)
+    
+    c.send(f"You have successfully connected to {addr}".encode())
+    
+    c.close()
+    break
