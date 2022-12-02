@@ -33,3 +33,8 @@ s1 = create_socket()
 port = 1234
 s1.bind(("",port))
 print("socket binded to port = ",port)
+
+
+
+s1.listen(5)
+print("Scoket is listenining")
