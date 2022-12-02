@@ -26,3 +26,10 @@ host = get_hostIP("www.cisco.com")
 
 s.connect((host, 80))
 print("Socket has successfully connected to {host}".format(host = host))
+
+
+
+s1 = create_socket()
+port = 1234
+s1.bind(("",port))
+print("socket binded to port = ",port)
