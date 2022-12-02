@@ -19,3 +19,10 @@ def get_hostIP(host_name):
     
     if hostIP:
         return hostIP
+
+s = create_socket(socket.AF_INET, socket.SOCK_STREAM)
+
+host = get_hostIP("www.cisco.com")
+
+s.connect((host, 80))
+print("Socket has successfully connected to {host}".format(host = host))
