@@ -47,3 +47,20 @@ while True:
     
     c.close()
     break
+
+#Another Example
+
+# socket object
+s = socket.socket()        
+ 
+# Port to connect
+port = 12345               
+ 
+# Connecting to the server
+s.connect(('127.0.0.1', port))
+ 
+# Receive data from the server and decoding to get the string.
+print (s.recv(1024).decode())
+# close the connection
+s.close()    
+     
